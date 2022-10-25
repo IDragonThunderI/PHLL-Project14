@@ -6,20 +6,20 @@ int main()
 	int code;
 	struct Employees
 	{
-		int number; // Табельный номер
-		char name[30]; // ФИО
-		int year; // Год рождения
-		char gender[7]; // Пол
-		int code; // Код отдела
+		int number; // РўР°Р±РµР»СЊРЅС‹Р№ РЅРѕРјРµСЂ
+		char name[30]; // Р¤РРћ
+		int year; // Р“РѕРґ СЂРѕР¶РґРµРЅРёСЏ
+		char gender[7]; // РџРѕР»
+		int code; // РљРѕРґ РѕС‚РґРµР»Р°
 	};
 
 	int n;
-	Employees st[30]{}; // Описан массив структур
+	Employees st[30]{}; // РћРїРёСЃР°РЅ РјР°СЃСЃРёРІ СЃС‚СЂСѓРєС‚СѓСЂ
 
 	cout << "Enter the number of employees: ";
 	cin >> n;
 
-	// Ввод значений полей структуры
+	// Р’РІРѕРґ Р·РЅР°С‡РµРЅРёР№ РїРѕР»РµР№ СЃС‚СЂСѓРєС‚СѓСЂС‹
 	for (int i = 0; i < n; i++)
 	{
 		cout << "\nPersonnel number: ";
@@ -40,7 +40,7 @@ int main()
 
 	for (int i = 0, k = -1; i < n; i++)
 	{
-		// Поиск искомых сотрудников
+		// РџРѕРёСЃРє РёСЃРєРѕРјС‹С… СЃРѕС‚СЂСѓРґРЅРёРєРѕРІ
 		if (code == st[i].code) k = i;
 
 		if (k != -1)
